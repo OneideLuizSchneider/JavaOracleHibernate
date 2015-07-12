@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database Dialect & Driver for Oracle 9G-->
+        <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property> 
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+ 
+        <!-- Database Details-->
+        <property name="connection.username">MDCON</property>
+        <property name="connection.password">1324</property>
+        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+        <property name="connection.pool_size">1</property>
+        <property name="hibernate.default_schema">MDCON</property>
+        
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create</property>
+         
+        <mapping class="br.com.Cliente"/>
+    </session-factory>
+</hibernate-configuration>
