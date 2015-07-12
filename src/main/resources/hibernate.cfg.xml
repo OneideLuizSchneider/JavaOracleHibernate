@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <!-- Database Dialect & Driver for Oracle 9G-->
+        <!-- Database Dialect & Driver for Oracle 11G-->
         <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property> 
         <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
  
@@ -13,6 +13,7 @@
         <property name="connection.pool_size">1</property>
         <property name="hibernate.default_schema">MDCON</property>
         
+        <!-- Optional -->
         <property name="show_sql">true</property>
         <property name="hbm2ddl.auto">create</property>
          
